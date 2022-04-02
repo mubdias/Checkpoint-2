@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    height: auto;
+}
+header{
+    height: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+header img{
+    height: auto;
+    width: 40%;
+}
+a{
+    display: flex;
+  
+}
+li{
+   list-style: none;
+    background-color: aqua;
+    
+}
+.div_menu{
+    width: 10%;
+}
+@media(min-witdh: 900px){
+    
+}
