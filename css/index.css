@@ -1,32 +1,194 @@
-*{
-    padding: 0px;
-    margin: 0px;
-    height: auto;
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: Roboto;
 }
-header{
-    height: 10%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-   
+header {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
-header img{
-    height: auto;
-    width: 40%;
+header img {
+  height: auto;
+  width: 40%;
 }
-a{
-    display: flex;
-  
+a {
+  display: flex;
 }
-li{
-   list-style: none;
-    background-color: aqua;
-    
+li {
+  list-style: none;
+  background-color: aqua;
 }
-.div_menu{
-    width: 10%;
+.div_menu {
+  width: 10%;
 }
-@media(min-witdh: 900px){
-    
+
+.body {
+  margin: 0;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: 10px 5px 5px #212529;
+  background-color: #fff;
+}
+
+.banner {
+  position: relative;
+  background-image: url("../img/Car-AB1.png");
+  background-color: #a70101;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  min-height: 80vh;
+}
+
+.rectangle__config {
+  width: 200px;
+  height: 100px;
+  background-color: #212529;
+  box-shadow: 10px 5px 5px #212529;
+}
+
+.card__container {
+  border: none;
+}
+
+.card__header,
+.card_title {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.card__config {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+
+.card__title {
+  font-size: 20.8px;
+  color: #000;
+  font-weight: 700;
+  min-height: 50px;
+}
+
+.card__subtitle {
+  font-size: 14px;
+  color: rgba(68, 68, 68, 0.6);
+  font-weight: 400;
+}
+
+.card__carinfo {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  color: #444;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 8px;
+  min-height: 57px;
+}
+
+.slide-img {
+  position: relative;
+  display: block;
+}
+
+.card__body {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.card__footer {
+  position: relative;
+  font-size: 16px;
+  margin: 0 auto 6px;
+  font-family: Roboto, sans-serif;
+  color: #a70101;
+  font-style: normal;
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.2;
+}
+
+.card__footer p {
+  font-family: Roboto, sans-serif;
+  font-size: 14px;
+  color: #535353;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.card__footer span.value {
+  font-size: 22px;
+  margin-bottom: 6px;
+}
+
+.card__footer div {
+  margin-top: 32px;
+}
+
+.primary-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  background-color: #a70101;
+  border-radius: 50px;
+  padding: 10px 45px;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.primary-button:hover {
+  color: rgb(255, 255, 255);
+}
+
+.primary-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  transition: all 0.3s ease;
+  z-index: -1;
+  transform: translateX(-100%);
+}
+
+.primary-button:hover::before {
+  transform: translateX(0);
+}
+@media (min-witdh: 600px) {
+  .div_menu{
+    display: none;
+  }
 }
