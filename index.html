@@ -18,13 +18,13 @@
     <section class="banner">
         <div class="container">
             <div class="row">
-                <div class="text__config col-12, col-md-4, col-lg-3">
+                <div class="text__config, col-12 col-md-4 col-lg-3">
                     <h2>Houser Rent-A-Car</h2>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
                     <a href="">Explorar</a>
                 </div>
-                <div class="rectangle__config d-flex flex-row justify-content-left align-items-center"></div>
             </div>
+            <div class="rectangle__config d-flex flex-row justify-content-left"></div>
         </div>
     </section>
     <main>
@@ -33,103 +33,111 @@
                 <h2 class="items__title d-flex flex-row justify-content-center align-items-center">Itens</h2>
             </div>
         </div>
-        <div class="card d-flex flex-row justify-content-center">
-            <div class="card__default">
+        <div class="card__container d-flex flex-row justify-content-center flex-wrap gap-15px">
+            <div class="card__config card-default">
                 <div class="card__header">
-                    <p class="card__header-title">Carro Hatch Compacto 1.0</p>
-                    <p class="card__header-groupName">Grupo AM</p>
-                    <p class="card__header-cars">Fiat Mobi | Renault KWID | ou similares</p>
+                    <p class="card__title">Carro Hatch Compacto 1.0</p>
+                    <p class="card__subtitle">Grupo AM</p>
+                    <p class="card__carinfo">Fiat Mobi</p>
                 </div>
                 <div class="card__body">
-                    <img src="img/am_fiat_mobi.png"
-                        alt="undefined" class="slide-img" style="opacity: 1;">
+                    <img src="/img/am_fiat_mobi.png" alt="Fiat Mobi">
                 </div>
                 <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">92,69/</span>Diária <div>
+                    <p>A partir de</p> R$ <span class="value">92,69/</span>Diária
+
+                    <div>
+                        <app-button><a class="primary-button">Alugar</a></app-button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="card__config card-default">
+                <div class="card__header">
+                    <p class="card__title">Carro Sedan Médio AT Plus</p>
+                    <p class="card__subtitle">Grupo CX</p>
+                    <p class="card__carinfo">Volkswagen Virtus</p>
+                </div>
+                <div class="card__body">
+                    <img src="/img/cx_volkswagen_virtus.png" alt="Volkswagen Virtus">
+                </div>
+                <div class="card__footer">
+                    <p>A partir de</p> R$ <span class="value">92,69/</span>Diária
+
+                    <div>
                         <app-button><a class="primary-button">Alugar</a></app-button>
                     </div>
                 </div>
             </div>
-            <div class="card__default">
+            <div class="card__config card-default">
                 <div class="card__header">
-                    <p class="card__header-title">Carro Hatch Compacto 1.0</p>
-                    <p class="card__header-groupName">Grupo AM</p>
-                    <p class="card__header-cars">Fiat Mobi | Renault KWID | ou similares</p>
+                    <p class="card__title">Carro Luxo AT</p>
+                    <p class="card__subtitle">Grupo LX</p>
+                    <p class="card__carinfo">Mercedes-Benz C180</p>
                 </div>
                 <div class="card__body">
-                    <img src="img/am_fiat_mobi.png"
-                        alt="undefined" class="slide-img" style="opacity: 1;">
+                    <img src="/img/lx_mercedes_c180.png" alt="Mercedes C180">
                 </div>
                 <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">92,69/</span>Diária <div>
+                    <p>A partir de</p> R$ <span class="value">207,40/</span>Diária
+
+                    <div>
                         <app-button><a class="primary-button">Alugar</a></app-button>
                     </div>
                 </div>
             </div>
-            <div class="card__default">
+            <div class="card__config card-default">
                 <div class="card__header">
-                    <p class="card__header-title">Carro Hatch Compacto 1.0</p>
-                    <p class="card__header-groupName">Grupo AM</p>
-                    <p class="card__header-cars">Fiat Mobi | Renault KWID | ou similares</p>
+                    <p class="card__title">Carro Adaptado</p>
+                    <p class="card__subtitle">Grupo AD</p>
+                    <p class="card__carinfo">Renault Fluence</p>
                 </div>
                 <div class="card__body">
-                    <img src="img/am_fiat_mobi.png"
-                        alt="undefined" class="slide-img" style="opacity: 1;">
+                    <img src="/img/ad_renault_fluence.png" alt="Renault Fluence">
                 </div>
                 <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">92,69/</span>Diária <div>
+                    <p>A partir de</p> R$ <span class="value">158,67/</span>Diária
+
+                    <div>
                         <app-button><a class="primary-button">Alugar</a></app-button>
                     </div>
                 </div>
             </div>
-            <div class="card__default">
+            <div class="card__config card-default">
                 <div class="card__header">
-                    <p class="card__header-title">Carro Hatch Compacto 1.0</p>
-                    <p class="card__header-groupName">Grupo AM</p>
-                    <p class="card__header-cars">Fiat Mobi | Renault KWID | ou similares</p>
+                    <p class="card__title">Carro Blindado</p>
+                    <p class="card__subtitle">Grupo BL</p>
+                    <p class="card__carinfo">Volkswagen Tiguan Allspace</p>
                 </div>
                 <div class="card__body">
-                    <img src="img/am_fiat_mobi.png"
-                        alt="undefined" class="slide-img" style="opacity: 1;">
+                    <img src="/img/bl_volkswagen_tiguan-2.png" alt="Tiguan Allspace">
                 </div>
                 <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">92,69/</span>Diária <div>
+                    <p>A partir de</p> R$ <span class="value">223,57/</span>Diária
+
+                    <div>
                         <app-button><a class="primary-button">Alugar</a></app-button>
                     </div>
                 </div>
             </div>
-            <div class="card__default">
+            <div class="card__config card-default">
                 <div class="card__header">
-                    <p class="card__header-title">Carro Hatch Compacto 1.0</p>
-                    <p class="card__header-groupName">Grupo AM</p>
-                    <p class="card__header-cars">Fiat Mobi | Renault KWID | ou similares</p>
+                    <p class="card__title">Carro Hatch Médio 1.0</p>
+                    <p class="card__subtitle">Grupo B</p>
+                    <p class="card__carinfo">Fiat Argo</p>
                 </div>
                 <div class="card__body">
-                    <img src="img/am_fiat_mobi.png"
-                        alt="undefined" class="slide-img" style="opacity: 1;">
+                    <img src="/img/b_fiat_argo.png" alt="Fiat Argo">
                 </div>
                 <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">92,69/</span>Diária <div>
+                    <p>A partir de</p> R$ <span class="value">92,71/</span>Diária
+
+                    <div>
                         <app-button><a class="primary-button">Alugar</a></app-button>
                     </div>
                 </div>
             </div>
-            <div class="card__default">
-                <div class="card__header">
-                    <p class="card__header-title">Carro Hatch Compacto 1.0</p>
-                    <p class="card__header-groupName">Grupo AM</p>
-                    <p class="card__header-cars">Fiat Mobi | Renault KWID | ou similares</p>
-                </div>
-                <div class="card__body">
-                    <img src="img/am_fiat_mobi.png"
-                        alt="undefined" class="slide-img" style="opacity: 1;">
-                </div>
-                <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">92,69/</span>Diária <div>
-                        <app-button><a class="primary-button">Alugar</a></app-button>
-                    </div>
-                </div>
-            </div>
+
         </div>
 
     </main>
