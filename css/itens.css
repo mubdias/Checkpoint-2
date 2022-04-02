@@ -23,7 +23,7 @@ h2 {
   gap: 30px;
 }
 img {
-  width: 50%;
+  width: 70%;
 }
 
 ul {
@@ -43,35 +43,38 @@ li {
 .porta {
   position: absolute;
   padding-top: 10px;
+  color: #a70101;
 }
 
 .ar {
   position: absolute;
   padding-top: 45px;
+  color: #a70101;
 }
 
 .banco {
   position: absolute;
   padding-top: 79px;
+  color: #a70101;
 }
 
 .marcha {
   position: absolute;
   padding-top: 115px;
+  color: #a70101;
 }
 
 .airbag {
   position: absolute;
   padding-top: 150px;
-
+  color: #a70101;
 }
 
 .carro {
- position: absolute;
- padding-top: 185px;
+  position: absolute;
+  padding-top: 185px;
+  color: #a70101;
 }
-
-
 
 iframe {
   width: 95%;
@@ -79,8 +82,8 @@ iframe {
 }
 
 a {
-  color: red;
-  background: black;
+  color: #ffffff;
+  background-color: #a70101;
   text-decoration: none;
   font-size: 16px;
   font-weight: 900;
