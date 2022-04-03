@@ -41,7 +41,7 @@
 .banner {
   position: relative;
   background-image: url("../img/banner-carro.jpg");
-  background-attachment: scroll;
+  background-attachment: fixed;
   background-size: contain;
   background-color: #a00303;
   background-repeat: no-repeat;
