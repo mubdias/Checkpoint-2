@@ -2,18 +2,38 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: Roboto;
+  font-family: 'Roboto';
 }
 
-/*.header_mobile {
+.header_mobile {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_mobile ul {
+  list-style: none;
+}
+.menumobile_lista button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 1px;
+  width: 100px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+.menumobile_lista button:hover{
+  transition-property: background-color, color;
+   transition-duration: 0.8s;
+   background-color: #a00303;
+   color: aliceblue;
 }
 
 .header_desktop {
   display: none;
-}*/
-
-.menu__lista {
-  list-style-type: none;
 }
 
 .body {
@@ -284,19 +304,22 @@ a.button__exp:hover {
 
 footer {
   padding: 2rem;
-  background-color: silver;
-  height: 30vh;
   display: flex;
   flex-direction: column;
   font-weight: bold;
   text-align: center;
   gap: 1.5rem;
   box-shadow: 0px -4px 4px rgb(170, 169, 169);
+  color: whitesmoke;
+  background-color: #696969;
+}
+.footer_img:hover{
+  transform: scale(1.5);
 }
 
 .divfooter_participantes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -316,18 +339,47 @@ footer {
 
 @media (min-width: 900px) {
   .header_desktop {
-    height: 20vh;
+    height: 15vh;
+    padding: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-weight: bolder;
+    background-color: #d7d7d7;
+    box-shadow: 0px -4px 4px rgb(170, 169, 169);
   }
+  .header_botao{
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+  }
+  .header_botao:hover{
+   transition-property: background-color, color;
+   transition-duration: 0.8s;
+   background-color: #a00303;
+   color: aliceblue;
 
-  .logo_desktop {
-    height: 10rem;
+  }
+  .header_desktop ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  .container-fluid {
+    height: 80vh;
   }
 
   .header_mobile {
     display: none;
   }
+
+  .divfooter_participantes {
+    flex-direction: row;
+  }
+  
+
 }
