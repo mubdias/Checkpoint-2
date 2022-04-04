@@ -147,7 +147,7 @@ a.button__exp:hover {
 
 .cards__container {
   width: 80%;
-  height: 450vh;
+  height: 495vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
