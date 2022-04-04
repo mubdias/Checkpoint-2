@@ -377,9 +377,8 @@ footer {
     display: none;
   }
 
-  .divfooter_participantes {
+.divfooter_participantes {
     flex-direction: row;
   }
   
-
-}
+ 

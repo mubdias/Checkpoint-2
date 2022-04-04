@@ -51,14 +51,15 @@ h2 {
   text-align: justify;
   padding: 12px;
   gap: 16px;
+  background-color: #d7d7d7;
   border: solid 1px rgb(203, 203, 203);
 }
 
-img {
-  width: 70%;
+.foto{
+  width:70%;
 }
 
-img:hover {
+.foto:hover {
   transform: scale(1.5);
 }
 
@@ -180,4 +181,63 @@ footer {
   }
 }
 
+@media (min-width: 900px) {
 
+.titulo { 
+font-size: 2rem;
+} 
+
+.card_conteiner { 
+position: relative;
+height: 600px;
+} 
+
+.texto { 
+position: absolute;
+font-size: 1.7rem;
+left: 300px ;
+top: 65px;   
+} 
+
+.foto{
+  position: absolute;
+  width: 30%;
+  left:200px;
+  top: 120px;
+ }
+
+.texto2 { 
+ position: absolute;
+ width: 20%;
+ left: 300px;
+ top:410px ;
+ transform: scale(1.2);
+} 
+
+.icones { 
+position: absolute;
+left: 200px;
+top:350px;    
+transform: scale(1.2)
+}
+
+.texto3 {
+position: absolute;  
+font-size: 1.7rem;
+right: 150px;
+top:65px;
+}
+
+.video { 
+  position: absolute;
+  width: 37%;
+  right: 40px;    
+  top: 150px; 
+} 
+
+.link { 
+position: absolute;
+bottom: 20px;
+}  
+
+}
