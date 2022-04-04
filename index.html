@@ -10,180 +10,194 @@
     <script type="text/javascript" src="js/menu.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <title>Home | Houser Ren-A-Car</title>
+    <title>Houser Ren-A-Car | Home</title>
 </head>
 
 <body>
     <header class="header_mobile">
-        <div class="logo_mobile" >
-            <img src="img/Houser_Rent-A-Car-removebg-preview.png" alt="">
+        <div class="logo_mobile">
+            <img src="img/Logo.png" alt="">
         </div>
         <div class="div_menu">
             <a class="menu" href="javascript://">
                 <img src="img/menu.png" alt="menu">
             </a>
-            <ul class="menu_lista">
-                <li>Home <a href="index.html"></a></li>
-                <li>Itens <a href="itens.html"></a></li>
-                <li>Sobre Nós <a href="sobrenos.html"></a></li>
-                <li>Login <a href="login.html"></a></li>
+            <ul class="menumobile_lista">
+                <button><li>HOME <a href="index.html"></a></li></button>
+                <button><li>ITENS <a href="itens.html"></a></li></button>
+                <button><li>SOBRE NÓS <a href="sobrenos.html"></a></li></button>
+                <button><li>LOGIN <a href="login.html"></a></li></button>
             </ul>
         </div>
     </header>
 
     <header class="header_desktop">
         <div class="logo_desktop">
-            <img src="img/Houser_Rent-A-Car-removebg-preview.png" alt="">
+            <img src="img/Logo.png" alt="">
         </div>
-        <div class="divmenu_lista">
+        <div class="menudesktop_lista">
             <ul>
-                <li>Home <a href="index.html"></a></li>
-                <li>Itens <a href="itens.html"></a></li>
-                <li>Sobre Nós <a href="sobrenos.html"></a></li>
-                <li>Login <a href="login.html"></a></li>
+                <li>
+                    <button class="header_botao">HOME
+                        <a href="index.html"></a>
+                    </button>
+                </li>
+                <li>
+                    <button class="header_botao"> ITENS
+                        <a href="itens.html"></a>
+                    </button>
+                </li>
+                <li>
+                    <button class="header_botao"> SOBRE NÓS
+                        <a href="sobrenos.html"></a>
+                    </button>
+                </li>
+                <li>
+                    <button class="header_botao"> LOGIN
+                        <a href="login.html"></a>
+                    </button>
+                </li>
             </ul>
     </header>
     <main>
-        <section class="banner">
-            <div class="container">
-                <div class="row">
-                    <div class="text__config, col-12 col-md-4 col-lg-3">
-                        <h2>Houser Rent-A-Car</h2>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="">Explorar</a>
-                    </div>
-                </div>
-                <div class="rectangle__config d-flex flex-row justify-content-left"></div>
-            </div>
-        </section>
-
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <h2 class="items__title d-flex flex-row justify-content-center align-items-center">Itens</h2>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <section class="banner">
+                        <div class="overlay__banner">
+                            <div class="presentation__config">
+                                <div class="text__container">
+                                    <h2 class="banner__title">Houser Rent-A-Car</h2>
+                                    <p class="banner__text">Visite novos lugares com qualidade e segurança
+                                        com os carros da Houser Rent-A-Car.</p>
+                                </div>
+                                <a class="button__exp" href="#itens">Explorar</a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
-        <div class="card__container d-flex flex-row justify-content-center flex-wrap gap-15px">
-            <div class="card__config card-default">
-                <div class="card__header">
-                    <p class="card__title">Carro Hatch Compacto 1.0</p>
-                    <p class="card__subtitle">Grupo AM</p>
-                    <p class="card__carinfo">Fiat Mobi</p>
-                </div>
-                <div class="card__body">
-                    <img src="/img/am_fiat_mobi.png" alt="Fiat Mobi">
-                </div>
-                <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">92,69/</span>Diária
-                    <div>
-                        <app-button><a class="primary-button">Alugar</a></app-button>
-                    </div>
-                </div>
 
+        <div class="container-fluid">
+            <div class="items__title, row">
+                <h2 id="itens" class="d-flex flex-row justify-content-center align-items-center">Itens</h2>
             </div>
-            <div class="card__config card-default">
-                <div class="card__header">
-                    <p class="card__title">Carro Sedan Médio AT Plus</p>
-                    <p class="card__subtitle">Grupo CX</p>
-                    <p class="card__carinfo">Volkswagen Virtus</p>
+        </div>
+        <div class="container__organizer">
+            <div class="cards__container">
+                <div class="containercrd">
+                    <div class="card__header">
+                        <p class="card__title">Carro Hatch Compacto 1.0</p>
+                        <p class="card__subtitle">Grupo AM</p>
+                        <p class="card__carinfo">Fiat Mobi</p>
+                    </div>
+                    <div class="car__bg"><img src="img/fiat_mobi.png" alt="Fiat Mobi"></div>
+                    <div class="card__footer">
+                        <p>A partir de</p> R$ <span class="value">92,69/</span>Diária
+                        <div>
+                            <app-button><a class="primary-button" href="itens.html">Alugar</a></app-button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card__body">
-                    <img src="/img/cx_volkswagen_virtus.png" alt="Volkswagen Virtus">
+                <div class="containercrd">
+                    <div class="card__header">
+                        <p class="card__title">Carro Hatch Médio 1.0</p>
+                        <p class="card__subtitle">Grupo B</p>
+                        <p class="card__carinfo">Fiat Argo</p>
+                    </div>
+                    <div class="car__bg"><img src="img/fiat_argo.png" alt="Fiat Mobi"></div>
+                    <div class="card__footer">
+                        <p>A partir de</p> R$ <span class="value">92,71/</span>Diária
+                        <div>
+                            <app-button><a class="primary-button" href="itens2.html">Alugar</a></app-button>
+                        </div>
+                    </div>
                 </div>
-                <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">92,69/</span>Diária
-                    <div>
-                        <app-button><a class="primary-button">Alugar</a></app-button>
+                <div class="containercrd">
+                    <div class="card__header">
+                        <p class="card__title">Carro Adaptado</p>
+                        <p class="card__subtitle">Grupo AD</p>
+                        <p class="card__carinfo">Renault Fluence</p>
+                    </div>
+                    <div class="car__bg"><img src="img/renault_fluence.png" alt="Fiat Mobi"></div>
+                    <div class="card__footer">
+                        <p>A partir de</p> R$ <span class="value">158,67/</span>Diária
+                        <div>
+                            <app-button><a class="primary-button" href="itens3.html">Alugar</a></app-button>
+                        </div>
+                    </div>
+                </div>
+                <div class="containercrd">
+                    <div class="card__header">
+                        <p class="card__title">Carro Sedan Médio</p>
+                        <p class="card__subtitle">Grupo CX</p>
+                        <p class="card__carinfo">Volkswagen Virtus</p>
+                    </div>
+                    <div class="car__bg"><img src="img/cx_volkswagen_virtus.png" alt="Virtus"></div>
+                    <div class="card__footer">
+                        <p>A partir de</p> R$ <span class="value">117,57/</span>Diária
+                        <div>
+                            <app-button><a class="primary-button" href="itens5.html">Alugar</a></app-button>
+                        </div>
+                    </div>
+                </div>
+                <div class="containercrd">
+                    <div class="card__header">
+                        <p class="card__title">Carro Blindado</p>
+                        <p class="card__subtitle">Grupo BL</p>
+                        <p class="card__carinfo">Volkswagen Tiguan Allspace</p>
+                    </div>
+                    <div class="car__bg"><img src="img/bl_volkswagen_tiguan-2.png" alt="Tiguan Allspace">
+                    </div>
+                    <div class="card__footer">
+                        <p>A partir de</p> R$ <span class="value">223,57/</span>Diária
+                        <div>
+                            <app-button><a class="primary-button" href="itens4.html">Alugar</a></app-button>
+                        </div>
+                    </div>
+                </div>
+                <div class="containercrd">
+                    <div class="card__header">
+                        <p class="card__title">Carro Luxo</p>
+                        <p class="card__subtitle">Grupo LX</p>
+                        <p class="card__carinfo">Mercedes-Benz C180</p>
+                    </div>
+                    <div class="car__bg"><img src="img/lx_mercedes_c180.png" alt="Mercedez-Benz C180"></div>
+                    <div class="card__footer">
+                        <p>A partir de</p> R$ <span class="value">207,40/</span>Diária
+                        <div>
+                            <app-button><a class="primary-button" href="itens6.html">Alugar</a></app-button>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="card__config card-default">
-                <div class="card__header">
-                    <p class="card__title">Carro Luxo AT</p>
-                    <p class="card__subtitle">Grupo LX</p>
-                    <p class="card__carinfo">Mercedes-Benz C180</p>
-                </div>
-                <div class="card__body">
-                    <img src="/img/lx_mercedes_c180.png" alt="Mercedes C180">
-                </div>
-                <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">207,40/</span>Diária
-                    <div>
-                        <app-button><a class="primary-button">Alugar</a></app-button>
-                    </div>
-                </div>
-            </div>
-            <div class="card__config card-default">
-                <div class="card__header">
-                    <p class="card__title">Carro Adaptado</p>
-                    <p class="card__subtitle">Grupo AD</p>
-                    <p class="card__carinfo">Renault Fluence</p>
-                </div>
-                <div class="card__body">
-                    <img src="/img/renault_fluence.png" alt="Renault Fluence">
-                </div>
-                <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">158,67/</span>Diária
-                    <div>
-                        <app-button><a class="primary-button">Alugar</a></app-button>
-                    </div>
-                </div>
-            </div>
-            <div class="card__config card-default">
-                <div class="card__header">
-                    <p class="card__title">Carro Blindado</p>
-                    <p class="card__subtitle">Grupo BL</p>
-                    <p class="card__carinfo">Volkswagen Tiguan Allspace</p>
-                </div>
-                <div class="card__body">
-                    <img src="/img/bl_volkswagen_tiguan-2.png" alt="Tiguan Allspace">
-                </div>
-                <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">223,57/</span>Diária
-                    <div>
-                        <app-button><a class="primary-button">Alugar</a></app-button>
-                    </div>
-                </div>
-            </div>
-            <div class="card__config card-default">
-                <div class="card__header">
-                    <p class="card__title">Carro Hatch Médio 1.0</p>
-                    <p class="card__subtitle">Grupo B</p>
-                    <p class="card__carinfo">Fiat Argo</p>
-                </div>
-                <div class="card__body">
-                    <img src="/img/b_fiat_argo.png" alt="Fiat Argo">
-                </div>
-                <div class="card__footer">
-                    <p>A partir de</p> R$ <span class="value">92,71/</span>Diária
-                    <div>
-                        <app-button><a class="primary-button">Alugar</a></app-button>
-                    </div>
-                </div>
-            </div>
-
         </div>
 
     </main>
     <footer>
         <div class="divfooter_participantes">
             <div class="footer_naickely"> Naickely M. Fernandes
-                <p>Criação do header e footer e adaptação à versão desktop</p>
-                <a href=""> <img src="img/github.png" alt=""></a>
-                <a href=""> <img src="img/linkedin.png" alt=""></a>
+                <p>Criação do header, footer e responsividade versão desktop</p>
+                <a href="https://github.com/Naickely" target="_blank"> <img class="footer_img" src="img/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/naickely-monteiro-790198235/" target="_blank"> <img class="footer_img" src="img/linkedin.png"
+                        alt=""></a>
             </div>
-            <div class="footer_murilo"> Murilo B. Dias 
-                <p></p>
-                <a href=""> <img src="img/github.png" alt=""></a>
-                <a href=""> <img src="img/linkedin.png" alt=""></a>
+            <div class="footer_murilo"> Murilo B. Dias
+                <p>Criação das páginas Home e Sobre Nós</p>
+                <a href="https://github.com/mubdias/" target="_blank"> <img class="footer_img" src="img/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/murilo-barberini-dias-15854711a/" target="_blank"> <img class="footer_img" src="img/linkedin.png"
+                        alt=""></a>
             </div>
             <div class="footer_gustavo"> Gustavo Moraes
-                <p>Criação da página itens e adaptação para desktop</p>
-                <a href="https://github.com/Gustavo-mb" target="blank" > <img src="img/github.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/gustavo-moraes-7a1b63232/" target="blank"> <img src="img/linkedin.png" alt=""></a>
+                <p>Criação da página itens responsividade versão desktop</p>
+                <a href="https://github.com/Gustavo-mb" target="blank"> <img class="footer_img" src="img/github.png" alt=""></a>
+                <a href="https://www.linkedin.com/in/gustavo-moraes-7a1b63232/" target="blank"> <img class="footer_img"
+                        src="img/linkedin.png" alt=""></a>
             </div>
         </div>
         <div class="divfooter_infogeral">
-          <p>Checkpoint 2 desenvolvido em 2022</p>
+            <p>Checkpoint 2 desenvolvido em 2022</p>
         </div>
 
     </footer>

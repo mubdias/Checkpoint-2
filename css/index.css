@@ -2,13 +2,37 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: Roboto;
+  font-family: 'Roboto';
 }
-.header_mobile{
 
-
+.header_mobile {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.header_desktop{
+.header_mobile ul {
+  list-style: none;
+}
+.menumobile_lista button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 1px;
+  width: 100px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+.menumobile_lista button:hover{
+  transition-property: background-color, color;
+   transition-duration: 0.8s;
+   background-color: #a00303;
+   color: aliceblue;
+}
+
+.header_desktop {
   display: none;
 }
 
@@ -20,52 +44,157 @@
   line-height: 1.5;
   color: 10px 5px 5px #212529;
   background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+  --bs-gutter-x: 0rem !important;
+}
+
+.container-fluid {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
 }
 
 .banner {
   position: relative;
-  background-image: url("../img/Car-AB1.png");
-  background-color: #a70101;
+  background-image: url("../img/banner-carro.jpg");
+  background-attachment: fixed;
   background-size: contain;
+  background-color: #a00303;
   background-repeat: no-repeat;
-  background-position: right;
-  min-height: 80vh;
+  background-position: center;
+  min-height: 100vh;
+  box-shadow: 0px 4px 4px rgb(170, 169, 169);
+  margin-bottom: 25px;
 }
 
-.rectangle__config {
-  width: 200px;
-  height: 100px;
-  background-color: #212529;
-  box-shadow: 10px 5px 5px #212529;
+.presentation__config {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.card__container {
-  border: none;
+.text__container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: content;
+  margin-right: 0px;
+}
+
+.banner__text {
+  width: 725px;
+  font-size: 1.2rem;
+  color: rgb(255, 255, 255);
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+}
+
+.banner__title {
+  font-size: 3.5rem;
+  color: rgb(238, 34, 34);
+  font-weight: 700;
+  text-align: left;
+}
+
+a.button__exp {
+  display: inline-block;
+  padding: 0.35rem 1.2em;
+  border: 0.1rem solid #ffffff;
+  margin: 0 0.3rem 0.3rem 0;
+  border-radius: 0.12rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+  transition: all 0.2s;
+}
+a.button__exp:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.overlay__banner {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 713px;
+  position: relative;
+  width: 100%;
+  z-index: 4;
+}
+
+.items__title {
+  margin-top: 25px;
+  background-color: #a70101;
+}
+
+.container__organizer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.cards__container {
+  width: 80%;
+  height: 155vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  gap: 45px;
+}
+
+.containercrd {
+  height: 470px;
+  width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #d7d7d7;
+  padding-bottom: 10px;
+  border-radius: 15px;
+  transform: scale(1);
+  opacity: 1;
+  transition: all 150ms ease-in-out;
+}
+
+.containercrd:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+.car__bg img {
+  width: 100%;
+  border-radius: 15px 15px 0px 0px;
 }
 
 .card__header,
 .card_title {
   font-family: Roboto, sans-serif;
   font-style: normal;
-  text-align: left;
+  text-align: center;
   line-height: 1.2;
-  margin-bottom: 6px;
-}
-
-.card__config {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
-  word-wrap: break-word;
-  background-color: #fff;
-  background-clip: border-box;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
+  height: 120px;
+  margin-bottom: 0px;
+  margin-top: 15px;
 }
 
 .card__title {
-  font-size: 20.8px;
+  font-size: 1.2rem;
   color: #000;
   font-weight: 700;
   min-height: 50px;
@@ -79,13 +208,13 @@
 
 .card__carinfo {
   font-family: Roboto, sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #444;
   font-style: normal;
   font-weight: 400;
-  text-align: left;
+  text-align: center;
   line-height: 1.2;
-  margin-bottom: 8px;
+
   min-height: 57px;
 }
 
@@ -96,7 +225,10 @@
 
 .card__body {
   margin-bottom: 1.5rem;
-  position: relative;
+}
+
+.car__bg {
+  width: 100%;
 }
 
 .card__footer {
@@ -169,45 +301,85 @@
   z-index: -1;
   transform: translateX(-100%);
 }
-footer{
+
+footer {
   padding: 2rem;
-  background-color: silver;
-  height: 30vh;
   display: flex;
   flex-direction: column;
   font-weight: bold;
   text-align: center;
   gap: 1.5rem;
+  box-shadow: 0px -4px 4px rgb(170, 169, 169);
+  color: whitesmoke;
+  background-color: #696969;
 }
-.divfooter_participantes{
+.footer_img:hover{
+  transform: scale(1.5);
+}
+
+.divfooter_participantes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 2rem;
-
 }
-.divfooter_participantes img{
+
+.divfooter_participantes img {
   height: 2rem;
 }
-.divfooter_infogeral{
+
+.divfooter_infogeral {
   font-size: larger;
 }
+
 .primary-button:hover::before {
   transform: translateX(0);
 }
+
 @media (min-width: 900px) {
-  .header_desktop{
-    height: 20vh;
+  .header_desktop {
+    height: 15vh;
+    padding: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    font-weight: bolder;
+    background-color: #d7d7d7;
+    box-shadow: 0px -4px 4px rgb(170, 169, 169);
   }
-  .logo_desktop{
-    height: 10rem;
+  .header_botao{
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
   }
- .header_mobile{
-   display: none;
- }
+  .header_botao:hover{
+   transition-property: background-color, color;
+   transition-duration: 0.8s;
+   background-color: #a00303;
+   color: aliceblue;
+
+  }
+  .header_desktop ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
+  .container-fluid {
+    height: 80vh;
+  }
+
+  .header_mobile {
+    display: none;
+  }
+
+  .divfooter_participantes {
+    flex-direction: row;
+  }
+  
+
 }

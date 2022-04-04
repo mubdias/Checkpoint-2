@@ -1,3 +1,40 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: 'Roboto';
+}
+
+.header_mobile {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_mobile ul {
+  list-style: none;
+}
+.menumobile_lista button{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 1px;
+  width: 100px;
+  font-weight: bold;
+  border-radius: 50px;
+}
+.menumobile_lista button:hover{
+  transition-property: background-color, color;
+   transition-duration: 0.8s;
+   background-color: #a00303;
+   color: aliceblue;
+}
+
+.header_desktop {
+  display: none;
+}
 h2 {
   text-align: center;
   padding-top: 20px;
@@ -89,7 +126,7 @@ iframe {
   padding-bottom: 20px;
 }
 
-a {
+.link a {
   color: #ffffff;
   background-color: #a70101;
   text-decoration: none;
@@ -99,6 +136,34 @@ a {
   animation-name: botao;
   animation-duration: 3s;
   animation-iteration-count: infinite;
+}
+footer {
+  padding: 2rem;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  text-align: center;
+  gap: 1.5rem;
+  box-shadow: 0px -4px 4px rgb(170, 169, 169);
+  color: whitesmoke;
+  background-color: #696969;
+}
+
+.divfooter_participantes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.divfooter_participantes img {
+  height: 2rem;
+}
+
+.divfooter_infogeral {
+  font-size: larger;
 }
 
 @keyframes botao {
@@ -115,64 +180,4 @@ a {
   }
 }
 
-@media (min-width: 1280px) {
-  .card_conteiner {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    height: 550px;
-  }
 
-  h2 {
-    font-size: 2rem;
-  }
-
-  h3 {
-    position: absolute;
-    font-size: 1.7rem;
-    left: 250px;
-    top: 20px;
-  }
-
-  .ver {
-   position: absolute;
-   left: 1000px;
-  }
-  
-  
-  img {
-    position: absolute;
-    width: 28%;
-    left: 150px;
-    top: 70px;
-  }
-
-  p {
-    position: absolute;
-    width: 20%;
-    left: 335px;
-    bottom: 100px;
-    font-size: 1.2rem;
-    
-  }
-
-  ul {
-    position: absolute;
-    left: 270px;
-    bottom: 53px;
-    transform: scale(1.2);
-  }
-
-  iframe {
-    position: absolute;
-    width: 30%;
-    right: 120px;
-    top: 100px;
-  }
-
-  a {
-    position: absolute;
-    left: 650px;
-    bottom: 30px;
-  }
-}
