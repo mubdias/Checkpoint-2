@@ -37,23 +37,28 @@
 }
 h2 {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .card_conteiner {
   width: 100%;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding: 20px;
+  padding: 12px;
   gap: 16px;
+  border: solid 1px rgb(203, 203, 203);
 }
+
 img {
   width: 70%;
 }
 
-img:hover{
+img:hover {
   transform: scale(1.5);
 }
 
@@ -65,22 +70,21 @@ ul {
   align-items: flex-start;
 }
 
-li{
+li {
   list-style: none;
   padding: 8px;
   padding-left: 28px;
-  
 }
 
-li:hover{
-transform: scale(1.2)
+li:hover {
+  transform: scale(1.2);
 }
 
-.porta{
+.porta {
   position: absolute;
   padding-top: 10px;
   color: #a70101;
- }
+}
 
 .ar {
   position: absolute;
@@ -113,7 +117,7 @@ transform: scale(1.2)
 }
 
 iframe {
-  width: 95%;
+  width: 70%;
   border-radius: 15px;
 }
 
@@ -126,7 +130,7 @@ iframe {
   color: #ffffff;
   background-color: #a70101;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.2rem;
   border-radius: 50px;
   padding: 15px 45px;
   animation-name: botao;
@@ -175,47 +179,5 @@ footer {
     background-color: #a70101;
   }
 }
-@media (min-width: 900px) {
-  .header_desktop {
-    height: 15vh;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    font-weight: bolder;
-    background-color: #d7d7d7;
-    box-shadow: 0px -4px 4px rgb(170, 169, 169);
-  }
-  .header_botao{
-    padding: 8px;
-    border-radius: 50px;
-    border: none;
-    font-weight: bold;
-  }
-  .header_botao:hover{
-   transition-property: background-color, color;
-   transition-duration: 0.8s;
-   background-color: #a00303;
-   color: aliceblue;
 
-  }
-  .header_desktop ul {
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 2rem;
-  }
-  .container-fluid {
-    height: 80vh;
-  }
 
-  .header_mobile {
-    display: none;
-  }
-
-  .divfooter_participantes {
-    flex-direction: row;
-  }
-}
