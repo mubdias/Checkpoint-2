@@ -14,7 +14,7 @@
 .header_mobile ul {
   list-style: none;
 }
-.menumobile_lista button{
+.menumobile_lista button {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,11 +25,11 @@
   font-weight: bold;
   border-radius: 50px;
 }
-.menumobile_lista button:hover{
+.menumobile_lista button:hover {
   transition-property: background-color, color;
-   transition-duration: 0.8s;
-   background-color: #a00303;
-   color: aliceblue;
+  transition-duration: 0.8s;
+  background-color: #a00303;
+  color: aliceblue;
 }
 
 .header_desktop {
@@ -55,8 +55,8 @@ h2 {
   border: solid 1px rgb(203, 203, 203);
 }
 
-.foto{
-  width:70%;
+.foto {
+  width: 70%;
 }
 
 .foto:hover {
@@ -182,62 +182,111 @@ footer {
 }
 
 @media (min-width: 900px) {
+  .titulo {
+    font-size: 2rem;
+  }
 
-.titulo { 
-font-size: 2rem;
-} 
+  .card_conteiner {
+    position: relative;
+    height: 600px;
+  }
 
-.card_conteiner { 
-position: relative;
-height: 600px;
-} 
+  .texto {
+    position: absolute;
+    font-size: 1.7rem;
+    left: 300px;
+    top: 65px;
+  }
 
-.texto { 
-position: absolute;
-font-size: 1.7rem;
-left: 300px ;
-top: 65px;   
-} 
+  .foto {
+    position: absolute;
+    width: 30%;
+    left: 200px;
+    top: 120px;
+  }
 
-.foto{
-  position: absolute;
-  width: 30%;
-  left:200px;
-  top: 120px;
- }
+  .texto2 {
+    position: absolute;
+    width: 20%;
+    left: 300px;
+    top: 410px;
+    transform: scale(1.2);
+  }
 
-.texto2 { 
- position: absolute;
- width: 20%;
- left: 300px;
- top:410px ;
- transform: scale(1.2);
-} 
+  .icones {
+    position: absolute;
+    left: 200px;
+    top: 350px;
+    transform: scale(1.2);
+  }
 
-.icones { 
-position: absolute;
-left: 200px;
-top:350px;    
-transform: scale(1.2)
-}
+  .texto3 {
+    position: absolute;
+    font-size: 1.7rem;
+    right: 150px;
+    top: 65px;
+  }
 
-.texto3 {
-position: absolute;  
-font-size: 1.7rem;
-right: 150px;
-top:65px;
-}
+  .video {
+    position: absolute;
+    width: 37%;
+    right: 40px;
+    top: 150px;
+  }
 
-.video { 
-  position: absolute;
-  width: 37%;
-  right: 40px;    
-  top: 150px; 
-} 
+  .link {
+    position: absolute;
+    bottom: 20px;
+  }
 
-.link { 
-position: absolute;
-bottom: 20px;
-}  
+  .header_desktop {
+    height: 15vh;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bolder;
+    background-color: #d7d7d7;
+    box-shadow: 0px -4px 4px rgb(170, 169, 169);
+  }
+  .header_botao {
+    padding: 8px;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+  }
+  .header_botao:hover {
+    transition-property: background-color, color;
+    transition-duration: 0.8s;
+    background-color: #a00303;
+    color: aliceblue;
+  }
+  .header_desktop ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+  }
 
+  .banner__text {
+    width: 725px;
+  }
+
+  .items__title {
+    height: 80vh;
+  }
+
+  .cards__container {
+    height: 170vh;
+  }
+
+  .header_mobile {
+    display: none;
+  }
+
+  .divfooter_participantes {
+    flex-direction: row;
+  }
 }
