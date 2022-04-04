@@ -1,22 +1,27 @@
 h2 {
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .card_conteiner {
   width: 100%;
+  height: 800px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: justify;
-  padding: 20px;
+  padding: 12px;
   gap: 16px;
+  border: solid 1px rgb(203, 203, 203);
 }
+
 img {
   width: 70%;
 }
 
-img:hover{
+img:hover {
   transform: scale(1.5);
 }
 
@@ -28,22 +33,21 @@ ul {
   align-items: flex-start;
 }
 
-li{
+li {
   list-style: none;
   padding: 8px;
   padding-left: 28px;
-  
 }
 
-li:hover{
-transform: scale(1.2)
+li:hover {
+  transform: scale(1.2);
 }
 
-.porta{
+.porta {
   position: absolute;
   padding-top: 10px;
   color: #a70101;
- }
+}
 
 .ar {
   position: absolute;
@@ -76,7 +80,7 @@ transform: scale(1.2)
 }
 
 iframe {
-  width: 95%;
+  width: 70%;
   border-radius: 15px;
 }
 
@@ -89,7 +93,7 @@ a {
   color: #ffffff;
   background-color: #a70101;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1.2rem;
   border-radius: 50px;
   padding: 15px 45px;
   animation-name: botao;
@@ -108,5 +112,67 @@ a {
 
   100% {
     background-color: #a70101;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card_conteiner {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  h3 {
+    position: absolute;
+    font-size: 1.7rem;
+    left: 250px;
+    top: 20px;
+  }
+
+  .ver {
+   position: absolute;
+   left: 1000px;
+  }
+  
+  
+  img {
+    position: absolute;
+    width: 28%;
+    left: 150px;
+    top: 70px;
+  }
+
+  p {
+    position: absolute;
+    width: 20%;
+    left: 335px;
+    bottom: 100px;
+    font-size: 1.2rem;
+    
+  }
+
+  ul {
+    position: absolute;
+    left: 270px;
+    bottom: 53px;
+    transform: scale(1.2);
+  }
+
+  iframe {
+    position: absolute;
+    width: 30%;
+    right: 120px;
+    top: 100px;
+  }
+
+  a {
+    position: absolute;
+    left: 650px;
+    bottom: 30px;
   }
 }
