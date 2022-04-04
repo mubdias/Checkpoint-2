@@ -374,12 +374,12 @@ footer {
     width: 725px;
   }
 
-  .container-fluid {
+  .items__title {
     height: 80vh;
   }
 
   .cards__container {
-    height: 155vh;
+    height: 170vh;
   }
 
   .header_mobile {
