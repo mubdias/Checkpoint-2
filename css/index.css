@@ -87,7 +87,7 @@
 }
 
 .banner__text {
-  width: 725px;
+  width: 480px;
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
   font-weight: 300;
@@ -147,7 +147,7 @@ a.button__exp:hover {
 
 .cards__container {
   width: 80%;
-  height: 155vh;
+  height: 450vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -369,8 +369,17 @@ footer {
     align-items: center;
     gap: 2rem;
   }
+
+  .banner__text {
+    width: 725px;
+  }
+
   .container-fluid {
     height: 80vh;
+  }
+
+  .cards__container {
+    height: 155vh;
   }
 
   .header_mobile {
