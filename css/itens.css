@@ -1,11 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: 'Roboto';
 }
-
-
 
 .header_mobile {
   padding: 1rem;
@@ -153,6 +153,7 @@ footer {
   color: whitesmoke;
   background-color: #696969;
 }
+
 .footer_img:hover{
   transform: scale(1.5);
 }
@@ -296,4 +297,4 @@ footer {
   .divfooter_participantes {
     flex-direction: row;
   }
-
+}

@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
   font-family: "Roboto";
+
 }
 
 html {
@@ -36,17 +39,6 @@ header {
   color: 10px 5px 5px #212529;
   background-color: #fff;
   scroll-behavior: smooth;
-}
-
-.row {
-  margin-right: 0;
-  margin-left: 0;
-  --bs-gutter-x: 0rem;
-}
-
-.container-fluid {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
 }
 
 .banner {
@@ -172,9 +164,8 @@ a.button__exp:hover {
   border-radius: 15px 15px 0px 0px;
 }
 
-.card__header,
-.card_title {
-  font-family: Roboto, sans-serif;
+.card__header {
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   text-align: center;
   line-height: 1.2;
@@ -197,14 +188,13 @@ a.button__exp:hover {
 }
 
 .card__carinfo {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #444;
   font-style: normal;
   font-weight: 400;
   text-align: center;
   line-height: 1.2;
-
   min-height: 57px;
 }
 
@@ -223,9 +213,9 @@ a.button__exp:hover {
 
 .card__footer {
   position: relative;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0 auto 6px;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #a70101;
   font-style: normal;
   font-weight: 700;
@@ -234,8 +224,8 @@ a.button__exp:hover {
 }
 
 .card__footer p {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
   color: #535353;
   font-style: normal;
   font-weight: 400;
@@ -245,7 +235,7 @@ a.button__exp:hover {
 }
 
 .card__footer span.value {
-  font-size: 22px;
+  font-size: 1.2rem;
   margin-bottom: 6px;
 }
 
@@ -255,7 +245,7 @@ a.button__exp:hover {
 
 .primary-button {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #ffffff;
   font-style: normal;
   font-weight: 900;
@@ -301,7 +291,7 @@ footer {
   gap: 1.5rem;
   box-shadow: 0px -4px 4px rgb(170, 169, 169);
   color: whitesmoke;
-  background-color: #696969;
+  background-color: #343a40;
 }
 .footer_img:hover {
   transform: scale(1.5);

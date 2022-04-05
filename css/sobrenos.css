@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 * {
   margin: 0px;
   padding: 0px;
@@ -139,6 +141,15 @@ footer {
     width: 100%;
     height: auto;
     margin-top: 60px;
+  }
+
+  .container__button {
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    margin-right: 147px;
   }
 
   .content-section .title {
