@@ -92,31 +92,31 @@ li:hover {
 
 .ar {
   position: absolute;
-  padding-top: 45px;
+  padding-top: 53px;
   color: #a70101;
 }
 
 .banco {
   position: absolute;
-  padding-top: 79px;
+  padding-top: 90px;
   color: #a70101;
 }
 
 .marcha {
   position: absolute;
-  padding-top: 115px;
+  padding-top: 128px;
   color: #a70101;
 }
 
 .airbag {
   position: absolute;
-  padding-top: 150px;
+  padding-top: 170px;
   color: #a70101;
 }
 
 .carro {
   position: absolute;
-  padding-top: 185px;
+  padding-top: 209px;
   color: #a70101;
 }
 
@@ -187,7 +187,7 @@ footer {
   }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
   .titulo {
     font-size: 2rem;
   }
@@ -214,7 +214,7 @@ footer {
   .texto2 {
     position: absolute;
     width: 20%;
-    left: 300px;
+    left: 330px;
     top: 410px;
     transform: scale(1.2);
   }
@@ -223,7 +223,7 @@ footer {
     position: absolute;
     width: 70%;
     left: 150px;
-    top: 350px;
+    top: 310px;
     transform: scale(1.2);
   }
 

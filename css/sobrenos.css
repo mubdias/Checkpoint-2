@@ -130,7 +130,7 @@ footer {
 .divfooter_infogeral {
   font-size: larger;
 }
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
 
   .header_desktop {
     height: 15vh;
