@@ -10,6 +10,7 @@
 
 html {
   scroll-behavior: smooth;
+  font-size: 15px;
 }
 
 header {
@@ -70,19 +71,19 @@ header {
 }
 
 .banner__text {
-  width: 480px;
+  width: 90%;
   font-size: 1.2rem;
   color: rgb(255, 255, 255);
   font-weight: 300;
   line-height: 28px;
-  text-align: center;
+  padding-left: 37px;
 }
 
 .banner__title {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: rgb(238, 34, 34);
   font-weight: 700;
-  text-align: left;
+  text-align: center;
 }
 
 a.button__exp {
@@ -139,8 +140,8 @@ a.button__exp:hover {
 }
 
 .containercrd {
-  height: 470px;
-  width: 290px;
+  height: 360px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -182,6 +183,7 @@ a.button__exp:hover {
 }
 
 .card__subtitle {
+  width: 40%;
   font-size: 14px;
   color: rgba(68, 68, 68, 0.6);
   font-weight: 400;
@@ -317,7 +319,20 @@ footer {
   transform: translateX(0);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 1280px) {
+.navbar-nav a:hover::before {
+    width: 100%;
+  }
+
+.navbar-nav a::before {
+    content: "";
+    background: #a70101;
+    position: absolute;
+    bottom: -10px;
+    height: 5px;
+    width: 0%;
+    transition: 0.5s linear;
+  }
 
   .navbar {
     width: 100%;
@@ -351,4 +366,9 @@ footer {
   .divfooter_participantes {
     flex-direction: row;
   }
+
+
+
+
+
 }
