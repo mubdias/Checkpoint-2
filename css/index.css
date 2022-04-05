@@ -320,19 +320,6 @@ footer {
 }
 
 @media (min-width: 1280px) {
-.navbar-nav a:hover::before {
-    width: 100%;
-  }
-
-.navbar-nav a::before {
-    content: "";
-    background: #a70101;
-    position: absolute;
-    bottom: -10px;
-    height: 5px;
-    width: 0%;
-    transition: 0.5s linear;
-  }
 
   .navbar {
     width: 100%;
