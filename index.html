@@ -8,156 +8,87 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/login.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="js/menu.js"></script>
     <script type="text/javascript" src="js/login.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Houser Rent-A-Car | Home</title>
 </head>
 
 <body>
-    <header class="header_mobile">
-        <div class="logo_mobile">
-            <img src="img/Logo.png" alt="">
-        </div>
-        <div class="div_menu">
-            <a class="menu" href="javascript://">
-                <img src="img/menu.png" alt="menu">
-            </a>
-            <ul class="menumobile_lista">
-                <button>
-                    <li><a href="index.html">Home</a></li>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <img src="img/Logo.png" class="img-fluid" alt="Logo">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
                 </button>
-                <button>
-                    <li><a href="itens.html">Itens</a></li>
-                </button>
-                <button>
-                    <li><a href="sobrenos.html">Sobre nós</a></li>
-                </button>
-                <button>
-                    <li><a href="#myBtn" id="myBtn">Login</a></li>
-                </button>
-            </ul>
-            <div class="container">
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
+                <div class="navbar-collapse d-lg-flex justify-content-end collapse" id="navbarNav" style="">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active fw-bold" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#itens">Itens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="nav__sobrenos" href="sobrenos.html">Sobre nós</a>
+                        </li>
+                        <li><a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" href="#myBtn"
+                                id="myBtn">Login</a></li>
 
-                        <!-- Conteúdo do modal -->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4><span class="glyphicon glyphicon-lock"></span> Entrar</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label for="usrname"><span class="glyphicon glyphicon-user"></span>
-                                            Usuário</label>
-                                        <input type="text" class="form-control" id="usrname" placeholder="E-mail">
+                        <div class="container">
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" role="dialog">
+                                <div class="modal-dialog">
+
+                                    <!-- Conteúdo do modal -->
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img class="logo__modal" src="img/Logo.png" class="img-fluid" alt="Logo">
+                                            <form role="form">
+                                                <div class="form-group">
+                                                    <label for="usrname"><span class="glyphicon glyphicon-user"></span>
+                                                        Usuário</label>
+                                                    <input type="text" class="form-control" id="usrname"
+                                                        placeholder="E-mail">
+                                                </div>
+                                                <div class="form-group">
+                                                    <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>
+                                                        Senha</label>
+                                                    <input type="text" class="form-control" id="psw"
+                                                        placeholder="Senha">
+                                                </div>
+                                                <div class="checkbox">
+                                                    <label><input type="checkbox" value="" checked>Lembrar-me</label>
+                                                </div>
+                                                <button type="submit" class="btn btn-success btn-block"><span
+                                                        class="glyphicon glyphicon-off"></span> Entrar</button>
+                                            </form>
+                                        </div>
+                                        <div class="modal-ftr">
+                                            <p>Não é usuário? <a href="#">Registrar-se</a></p>
+                                            <p><a href="#">Esqueceu a senha?</a></p>
+                                        </div>
                                     </div>
-                                    <div class="form-group">
-                                        <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>
-                                            Senha</label>
-                                        <input type="text" class="form-control" id="psw" placeholder="Senha">
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="" checked>Lembrar-me</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-success btn-block"><span
-                                            class="glyphicon glyphicon-off"></span> Entrar</button>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-danger btn-default pull-left"
-                                    data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
-                                    Cancelar</button>
-                                <p>Não é usuário? <a href="#">Registrar-se</a></p>
-                                <p><a href="#">Esqueceu a senha?</a></p>
+                                </div>
                             </div>
                         </div>
-
-                    </div>
+                    </ul>
                 </div>
             </div>
-        </div>
-    </header>
-
-    <header class="header_desktop">
-        <div class="logo_desktop">
-            <img src="img/Logo.png" alt="">
-        </div>
-        <div class="menudesktop_lista">
-            <ul>
-                <li>
-                    <button class="header_botao">Home
-                        <a href="index.html"></a>
-                    </button>
-                </li>
-                <li>
-                    <button class="header_botao"> Itens
-                        <a href="itens.html"></a>
-                    </button>
-                </li>
-                <li>
-                    <button class="header_botao"> 
-                        <a href="sobrenos.html">Sobre nós</a>
-                    </button>
-                </li>
-                <li>
-                    <button class="header_botao"><a href="#" id="myBtn">Login</a></button>
-
-                </li>
-            </ul>
-            <div class="container">
-                <!-- Modal -->
-                <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">
-
-                        <!-- Conteúdo do modal -->
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                <h4><span class="glyphicon glyphicon-lock"></span> Entrar</h4>
-                            </div>
-                            <div class="modal-body">
-                                <form role="form">
-                                    <div class="form-group">
-                                        <label for="usrname"><span class="glyphicon glyphicon-user"></span>
-                                            Usuário</label>
-                                        <input type="text" class="form-control" id="usrname" placeholder="E-mail">
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="psw"><span class="glyphicon glyphicon-eye-open"></span>
-                                            Senha</label>
-                                        <input type="text" class="form-control" id="psw" placeholder="Senha">
-                                    </div>
-                                    <div class="checkbox">
-                                        <label><input type="checkbox" value="" checked>Lembrar-me</label>
-                                    </div>
-                                    <button type="submit" class="btn btn-success btn-block"><span
-                                            class="glyphicon glyphicon-off"></span> Entrar</button>
-                                </form>
-                            </div>
-                            <div class="modal-footer">
-                                <button type="submit" class="btn btn-danger btn-default pull-left"
-                                    data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span>
-                                    Cancelar</button>
-                                <p>Não é usuário? <a href="#">Registrar-se</a></p>
-                                <p><a href="#">Esqueceu a senha?</a></p>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
+        </nav>
     </header>
     <main>
-        <div class="container-fluid">
+        <div class="outer__banner">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <section class="banner">
+                <div class="inner__banner">
+                    <section class="banner" id="home">
                         <div class="overlay__banner">
                             <div class="presentation__config">
                                 <div class="text__container">
@@ -279,7 +210,8 @@
                         class="footer_img" src="img/linkedin.png" alt=""></a>
             </div>
             <div class="footer_murilo"> Murilo B. Dias
-                <p>Criação e estilização das páginas Home, Sobre Nós, Design Logo/Banner e responsividade versão desktop</p>
+                <p>Criação e estilização das páginas Home, Sobre Nós, Design Logo/Banner e responsividade versão desktop
+                </p>
                 <a href="https://github.com/mubdias/" target="_blank"> <img class="footer_img" src="img/github.png"
                         alt=""></a>
                 <a href="https://www.linkedin.com/in/murilo-barberini-dias-15854711a/" target="_blank"> <img
@@ -300,6 +232,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 </body>
 
