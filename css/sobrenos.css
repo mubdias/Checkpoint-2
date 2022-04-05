@@ -16,7 +16,6 @@ span {
   width: 80%;
   display: block;
   margin: auto;
-  padding-top: 50px;
 }
 
 .content-section {
@@ -27,6 +26,7 @@ span {
 }
 
 .content-section .title {
+  margin-top: 50px;
 	margin-bottom: 25px;
 }
 
