@@ -4,13 +4,12 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Roboto";
-
+  font-family: 'Roboto';
 }
 
 html {
   scroll-behavior: smooth;
-  font-size: 15px;
+  font-size: 1rem;
 }
 
 .navbar-toggler {
@@ -20,16 +19,29 @@ html {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  transition: box-shadow .15s ease-in-out;
+  transition: .15s ease-in-out;
 }
 
 #nav__sobrenos {
   width: 95px;
 }
 
+.navbar-collapse .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-collapse #nav__sobrenos {
+  width: 72px;
+}
+
 .body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
