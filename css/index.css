@@ -1,17 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 html {
   scroll-behavior: smooth;
-  font-size: 15px;
-}
-
-header {
-  background-color: #696969;
+  font-size: 1rem;
 }
 
 .navbar-toggler {
@@ -21,33 +19,38 @@ header {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  transition: box-shadow 0.15s ease-in-out;
+  transition: .15s ease-in-out;
 }
 
 #nav__sobrenos {
   width: 95px;
 }
 
+.navbar-collapse .navbar-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.navbar-collapse #nav__sobrenos {
+  width: 88px;
+  display: flex;
+  flex-direction: column;
+  align-items: self-end;
+}
+
 .body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: 10px 5px 5px #212529;
   background-color: #fff;
   scroll-behavior: smooth;
-}
-
-.row {
-  margin-right: 0;
-  margin-left: 0;
-  --bs-gutter-x: 0rem;
-}
-
-.container-fluid {
-  padding-right: 0 !important;
-  padding-left: 0 !important;
 }
 
 .banner {
@@ -175,9 +178,8 @@ a.button__exp:hover {
   border-radius: 15px 15px 0px 0px;
 }
 
-.card__header,
-.card_title {
-  font-family: Roboto, sans-serif;
+.card__header {
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   text-align: center;
   line-height: 1.2;
@@ -200,7 +202,7 @@ a.button__exp:hover {
 }
 
 .card__carinfo {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #444;
   font-style: normal;
@@ -225,9 +227,9 @@ a.button__exp:hover {
 
 .card__footer {
   position: relative;
-  font-size: 16px;
+  font-size: 1rem;
   margin: 0 auto 6px;
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: #a70101;
   font-style: normal;
   font-weight: 700;
@@ -238,13 +240,18 @@ a.button__exp:hover {
 }
 
 .card__footer p {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
   color: #535353;
   font-style: normal;
   font-weight: 400;
   text-align: left;
   line-height: 1.2;
+  margin-bottom: 6px;
+}
+
+.card__footer span.value {
+  font-size: 1.2rem;
   margin-bottom: 6px;
 }
 
@@ -254,7 +261,7 @@ a.button__exp:hover {
 
 .primary-button {
   font-family: "Roboto", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   color: #ffffff;
   font-style: normal;
   font-weight: 900;
@@ -301,7 +308,7 @@ footer {
   gap: 1.5rem;
   box-shadow: 0px -4px 4px rgb(170, 169, 169);
   color: whitesmoke;
-  background-color: #696969;
+  background-color: #343a40;
 }
 .footer_img:hover {
   transform: scale(1.5);
@@ -364,6 +371,29 @@ footer {
     width: 45%;
     flex-direction: row;
     flex-wrap: wrap;
+
+  .navbar {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  .navbar-collapse .navbar-nav {
+    height: 40px;
+  }
+
+  .outer__banner {
+    width: 100%;
+  }
+
+  .inner__banner {
+    width: 100%;
+  }
+  .banner__text {
+    width: 725px;
+  }
+
+  .items__title {
+    height: 80vh;
+    justify-content: center;
   }
 
   .cards__container {
@@ -393,3 +423,4 @@ footer {
 
 
  
+  }
