@@ -44,9 +44,26 @@
   padding-bottom: 20px;
 }
 
+.texto{
+position: relative;
+top: 34px;
+}
+
+.texto2 {
+font-size: 1.2rem;
+padding-left: 14px;
+padding-right: 12px; 
+}
+
+.texto3 {
+position: relative;
+bottom: 5px;
+
+}
+
 .card_conteiner {
   width: 100%;
-  height: 800px;
+  height: 930px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,7 +76,9 @@
 }
 
 .foto {
-  width: 70%;
+  position: relative;
+  width: 45%;
+  top: 15px;
 }
 
 .foto:hover {
@@ -68,6 +87,8 @@
 
 .icones {
   width: 100%;
+  font-size: 1.2rem;
+  padding-left: 12px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -86,42 +107,42 @@ li:hover {
 
 .porta {
   position: absolute;
-  padding-top: 10px;
+  padding-top: 12px;
   color: #a70101;
 }
 
 .ar {
   position: absolute;
-  padding-top: 53px;
+  padding-top: 55px;
   color: #a70101;
 }
 
 .banco {
   position: absolute;
-  padding-top: 90px;
+  padding-top: 96px;
   color: #a70101;
 }
 
 .marcha {
   position: absolute;
-  padding-top: 128px;
+  padding-top: 137px;
   color: #a70101;
 }
 
 .airbag {
   position: absolute;
-  padding-top: 170px;
+  padding-top: 184px;
   color: #a70101;
 }
 
 .carro {
   position: absolute;
-  padding-top: 209px;
+  padding-top: 227px;
   color: #a70101;
 }
 
 .video {
-  width: 70%;
+  width: 80%;
   border-radius: 15px;
 }
 
@@ -136,7 +157,7 @@ li:hover {
   text-decoration: none;
   font-size: 1.2rem;
   border-radius: 50px;
-  padding: 15px 45px;
+  padding: 15px 65px;
   animation-name: botao;
   animation-duration: 3s;
   animation-iteration-count: infinite;

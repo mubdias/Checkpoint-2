@@ -21,7 +21,7 @@ header {
   background-color: transparent;
   border: 1px solid transparent;
   border-radius: 0.25rem;
-  transition: box-shadow .15s ease-in-out;
+  transition: box-shadow 0.15s ease-in-out;
 }
 
 #nav__sobrenos {
@@ -114,7 +114,7 @@ a.button__exp:hover {
 }
 
 .overlay__banner {
-  height: 715px;
+  height: 885px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -138,7 +138,7 @@ a.button__exp:hover {
 
 .cards__container {
   width: 80%;
-  height: 455vh;
+  height: 310vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -148,14 +148,14 @@ a.button__exp:hover {
 }
 
 .containercrd {
-  height: 360px;
-  width: 80%;
+  position: relative;
+  height: 340px;
+  width: 90%;
   display: flex;
   flex-direction: column;
   gap: 5px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #d7d7d7;
-  padding-bottom: 10px;
   border-radius: 15px;
   transform: scale(1);
   opacity: 1;
@@ -169,7 +169,9 @@ a.button__exp:hover {
 }
 
 .car__bg img {
-  width: 100%;
+  position: relative;
+  width: 50%;
+  left: 80px;
   border-radius: 15px 15px 0px 0px;
 }
 
@@ -192,8 +194,7 @@ a.button__exp:hover {
 }
 
 .card__subtitle {
-  width: 40%;
-  font-size: 14px;
+  font-size: 1.2rem;
   color: rgba(68, 68, 68, 0.6);
   font-weight: 400;
 }
@@ -206,7 +207,6 @@ a.button__exp:hover {
   font-weight: 400;
   text-align: center;
   line-height: 1.2;
-
   min-height: 57px;
 }
 
@@ -233,6 +233,8 @@ a.button__exp:hover {
   font-weight: 700;
   text-align: left;
   line-height: 1.2;
+  position: relative;
+  bottom: 10px;
 }
 
 .card__footer p {
@@ -243,11 +245,6 @@ a.button__exp:hover {
   font-weight: 400;
   text-align: left;
   line-height: 1.2;
-  margin-bottom: 6px;
-}
-
-.card__footer span.value {
-  font-size: 22px;
   margin-bottom: 6px;
 }
 
@@ -273,6 +270,7 @@ a.button__exp:hover {
   display: block;
   transition: all 0.3s ease;
   position: relative;
+  bottom: 20px;
   overflow: hidden;
   z-index: 1;
 }
@@ -330,55 +328,68 @@ footer {
 }
 
 @media (min-width: 1280px) {
-.navbar-nav a:hover::before {
-    width: 100%;
+ .containercrd{
+   width: 25%;
+ }
+
+ .cards__container {
+  height: 120vh;
+ }
+ 
+ .button__exp{
+  position: relative;
+  right: 12px;
+ }
+
+ .link {
+ padding-left: 60px;
+ }
+
+ .texto2{
+   padding-bottom: 300px;
+ }
+
+
+@media (max-width: 1080px) {
+  .overlay__banner {
+    height: 100vh;
   }
 
-.navbar-nav a::before {
-    content: "";
-    background: #a70101;
-    position: absolute;
-    bottom: -10px;
-    height: 5px;
-    width: 0%;
-    transition: 0.5s linear;
+  .button__exp {
+    position: relative;
+    right: 13px;
   }
 
-  .navbar {
-    width: 100%;
-    background-color: #696969;
-  }
-
-  .outer__banner {
-    width: 100%;
-  }
-
-  .inner__banner {
-    width: 100%;
-  }
-  .banner__text {
-    width: 725px;
-  }
-
-  .items__title {
-    height: 80vh;
-    justify-content: center;
+  .containercrd {
+    width: 45%;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .cards__container {
-    height: 150vh;
+    height: 120vh;
   }
-
-  .header_mobile {
-    display: none;
-  }
-
-  .divfooter_participantes {
-    flex-direction: row;
-  }
-
-
-
-
-
+  
+  .card__header {
+    position: relative;
+    left: 50px;
 }
+  
+  .card_conteiner {
+    height: 100vh;
+  }
+
+  .video{
+    width: 60%;
+  }
+
+  
+  .image-section img{
+  height: 60vh;
+  
+}
+  
+
+
+
+ 

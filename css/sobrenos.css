@@ -39,13 +39,12 @@ span {
   }
 
 .container__button {
-  width: 185px;
+  width:100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  margin-right: 147px;
-}
+  padding-top: 30px;
+  padding-left: 5px;
+ }
 
 .image-section {
   float: none;
@@ -55,7 +54,7 @@ span {
 
 .image-section img {
   width: 100%;
-  height: auto;
+  height: 400px;
   display: block;
   margin: 25px 0px 15px 0px;
 }
