@@ -4,7 +4,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 span {
@@ -163,7 +163,7 @@ footer {
 
   .content-section .content p {
     margin-top: 10px;
-    font-family: "Roboto";
+    font-family: 'Roboto';
     font-size: 1.2rem;
     line-height: 1.5;
   }
