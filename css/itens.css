@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
 * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: 'Roboto';
+  font-family: "Roboto";
 }
 
 .titulo {
@@ -13,26 +13,25 @@
   padding-bottom: 20px;
 }
 
-.texto{
-position: relative;
-top: 34px;
+.texto {
+  position: relative;
 }
 
 .texto2 {
-font-size: 1.2rem;
-padding-left: 14px;
-padding-right: 12px; 
+  font-size: 1rem;
+  padding-left: 14px;
+  padding-right: 12px;
 }
 
 .texto3 {
-position: relative;
-bottom: 5px;
-
+  position: relative;
+  bottom: 5px;
+  font-weight: bolder;
 }
 
 .card_conteiner {
   width: 100%;
-  height: 930px;
+  height: 1125px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -50,13 +49,9 @@ bottom: 5px;
   top: 15px;
 }
 
-.foto:hover {
-  transform: scale(1.5);
-}
-
 .icones {
   width: 100%;
-  font-size: 1.2rem;
+  font-size: 1rem;
   padding-left: 12px;
   display: flex;
   flex-direction: column;
@@ -68,10 +63,6 @@ li {
   list-style: none;
   padding: 8px;
   padding-left: 28px;
-}
-
-li:hover {
-  transform: scale(1.2);
 }
 
 .porta {
@@ -115,38 +106,29 @@ li:hover {
   border-radius: 15px;
 }
 
-.link {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.link a {
+.primary-button {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
   color: #ffffff;
+  font-style: normal;
+  font-weight: 900;
+  text-align: center;
+  line-height: 1.2;
+  margin-bottom: 0;
+  text-transform: uppercase;
   background-color: #a70101;
-  text-decoration: none;
-  font-size: 1.2rem;
   border-radius: 50px;
-  padding: 15px 65px;
-  animation-name: botao;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
+  padding: 10px 45px;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
-@keyframes botao {
-  0% {
-    background-color: #a70101;
-  }
-
-  50% {
-    background-color: #000;
-  }
-
-  100% {
-    background-color: #a70101;
-  }
-}
-
-@media (min-width: 1280px) {
+@media (min-width: 999px) {
   .titulo {
     font-size: 2rem;
   }
@@ -154,36 +136,37 @@ li:hover {
   .card_conteiner {
     position: relative;
     height: 600px;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 185px;
   }
 
   .texto {
     position: absolute;
     font-size: 1.7rem;
-    left: 300px;
+    left: 460px;
     top: 65px;
   }
 
   .foto {
     position: absolute;
     width: 30%;
-    left: 200px;
-    top: 120px;
+    left: 315px;
+    top: 95px;
   }
 
   .texto2 {
     position: absolute;
     width: 20%;
-    left: 330px;
-    top: 410px;
-    transform: scale(1.2);
+    left: 380px;
+    top: 375px;
   }
 
   .icones {
-    position: absolute;
-    width: 70%;
+    width: 15%;
     left: 150px;
     top: 310px;
-    transform: scale(1.2);
   }
 
   .texto3 {
@@ -193,35 +176,14 @@ li:hover {
     top: 65px;
   }
 
+  #itens__button {
+    margin-top: 535px;
+  }
+
   .video {
     position: absolute;
     width: 37%;
     right: 40px;
     top: 150px;
-  }
-
-  .link {
-    position: absolute;
-    bottom: 20px;
-  }
-
-  .banner__text {
-    width: 725px;
-  }
-
-  .items__title {
-    height: 80vh;
-  }
-
-  .cards__container {
-    height: 170vh;
-  }
-
-  .header_mobile {
-    display: none;
-  }
-
-  .divfooter_participantes {
-    flex-direction: row;
   }
 }
