@@ -149,7 +149,7 @@ a.button__exp:hover {
 
 .cards__container {
   width: 58%;
-  height: 470vh;
+  height: 445vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -343,7 +343,7 @@ footer {
   transform: translateX(0);
 }
 
-@media (min-width: 999px) {
+@media (min-width: 1000px) {
 
   .navbar {
     width: 100%;
@@ -389,7 +389,7 @@ footer {
 @media (min-width: 1000px) {
 
   .cards__container {
-    height: 245vh;
+    height: 225vh;
 }
 
 }
