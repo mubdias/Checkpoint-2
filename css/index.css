@@ -381,15 +381,6 @@ footer {
   }
 }
 
-@media (min-width: 1000px) {
-
-  .cards__container {
-    padding-top: 25px;
-    padding-bottom: 30px;
-}
-
-}
-
 @media (min-width: 1145px) {
   .cards__container {
     padding-top: 25px;
