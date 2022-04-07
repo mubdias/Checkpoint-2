@@ -265,7 +265,7 @@ a.button__exp:hover {
 }
 
 .primary-button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1rem;
   color: #ffffff;
   font-style: normal;
@@ -394,5 +394,6 @@ footer {
   .cards__container {
     padding-top: 25px;
     padding-bottom: 30px;
+    width: 64%;
 }
 }

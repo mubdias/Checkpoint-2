@@ -4,7 +4,7 @@
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 .titulo {
@@ -178,6 +178,7 @@ li {
 
   #itens__button {
     margin-top: 535px;
+    text-transform: none;
   }
 
   .video {
