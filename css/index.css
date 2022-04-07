@@ -149,13 +149,14 @@ a.button__exp:hover {
 
 .cards__container {
   width: 58%;
-  height: 540vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-content: center;
   justify-content: center;
   gap: 45px;
+  padding-top: 25px;
+  padding-bottom: 30px;
 }
 
 .containercrd {
@@ -367,14 +368,8 @@ footer {
   }
 
   .cards__container {
-    width: 85%;
-    height: 155vh;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-content: center;
-    justify-content: center;
-    gap: 45px;
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
 
   .header_mobile {
@@ -389,13 +384,15 @@ footer {
 @media (min-width: 1000px) {
 
   .cards__container {
-    height: 225vh;
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
 
 }
 
 @media (min-width: 1145px) {
   .cards__container {
-    height: 155vh;
+    padding-top: 25px;
+    padding-bottom: 30px;
 }
 }
